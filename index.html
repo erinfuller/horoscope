@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Erin Fuller - PUI 2019 Final</title>
+    
+    <!-- css styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="stars.css">
+    <link rel="stylesheet" type="text/css" href="pop.css">
+
+    
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,300i,400,400i,600,600i,700,700i|Podkova:600,700,800&display=swap" rel="stylesheet">
+    
+    <!-- p5.js & jquery & javascript links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.sound.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="main.js" type="text/javascript"></script>
+    
+    
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+
+    
+    
+    
+</head>
+
+
+
+<body >
+    
+    <div class="stars" style="z-index: 1"></div>
+    <div class="twinkling" style="z-index: 1"></div>
+    <div class="clouds" style="z-index: 1"></div>
+
+    
+    
+    <div class="container-fluid" style="z-index: 2">
+        
+    
+        <div class="circle_container col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12" style="z-index: 5">
+            
+            
+            <div class="central_text text-center" style="z-index: 5">
+                <h3 id="item_title">Default title</h3>
+                <h5 id="item_description">Default description</h5>
+            </div>
+	           
+<!--
+            <div class="moon_container moon1" style="z-index: 5"><img class="moon moon1" alt="item1" src="assets/sun-signs-01.png"></div>
+            <div class="moon_container moon2" style="z-index: 5"><img class="moon moon2" alt="item2" src="assets/sun-signs-02.png"></div>
+            <div class="moon_container moon3" style="z-index: 5"><img class="moon moon3" alt="item3" src="assets/sun-signs-03.png"></div>
+            <div class="moon_container moon4" style="z-index: 5"><img class="moon moon4" alt="item4" src="assets/sun-signs-04.png"></div>
+            <div class="moon_container moon5" style="z-index: 5"><img class="moon moon5" alt="item5" src="assets/sun-signs-05.png"></div>
+            <div class="moon_container moon6" style="z-index: 5"><img class="moon moon6" alt="item6" src="assets/sun-signs-06.png"></div>
+            <div class="moon_container moon7" style="z-index: 5"><img class="moon moon7" alt="item7" src="assets/sun-signs-07.png"></div>
+            <div class="moon_container moon8" style="z-index: 5"><img class="moon moon8" alt="item8" src="assets/sun-signs-08.png"></div>
+            <div class="moon_container moon9" style="z-index: 5"><img class="moon moon9" alt="item9" src="assets/sun-signs-09.png"></div>
+            <div class="moon_container moon10" style="z-index: 5"><img class="moon moon10" alt="item10" src="assets/sun-signs-10.png"></div>
+            <div class="moon_container moon11" style="z-index: 5"><img class="moon moon11" alt="item11" src="assets/sun-signs-11.png"></div>
+            <div class="moon_container moon12" style="z-index: 5"><img class="moon moon12" alt="item12" src="assets/sun-signs-12.png"></div>
+-->
+            <a class="moon_container moon1 btn" href="#open-modal" style="z-index: 5"><img class="moon moon1" alt="item1" src="assets/sun-signs-01.png"></a>
+            <a class="moon_container moon2" style="z-index: 5"><img class="moon moon2" alt="item2" src="assets/sun-signs-02.png"></a>
+            <a class="moon_container moon3" style="z-index: 5"><img class="moon moon3" alt="item3" src="assets/sun-signs-03.png"></a>
+            <a class="moon_container moon4" style="z-index: 5"><img class="moon moon4" alt="item4" src="assets/sun-signs-04.png"></a>
+            <a class="moon_container moon5" style="z-index: 5"><img class="moon moon5" alt="item5" src="assets/sun-signs-05.png"></a>
+            <a class="moon_container moon6" style="z-index: 5"><img class="moon moon6" alt="item6" src="assets/sun-signs-06.png"></a>
+            <a class="moon_container moon7" style="z-index: 5"><img class="moon moon7" alt="item7" src="assets/sun-signs-07.png"></a>
+            <a class="moon_container moon8" style="z-index: 5"><img class="moon moon8" alt="item8" src="assets/sun-signs-08.png"></a>
+            <a class="moon_container moon9" style="z-index: 5"><img class="moon moon9" alt="item9" src="assets/sun-signs-09.png"></a>
+            <a class="moon_container moon10" style="z-index: 5"><img class="moon moon10" alt="item10" src="assets/sun-signs-10.png"></a>
+            <a class="moon_container moon11" style="z-index: 5"><img class="moon moon11" alt="item11" src="assets/sun-signs-11.png"></a>
+            <a class="moon_container moon12" style="z-index: 5"><img class="moon moon12" alt="item12" src="assets/sun-signs-12.png"></a>
+        </div>
+    </div>
+    
+
+    <div id="open-modal" class="modal-window">
+        <div> <a href="#" title="Close" class="modal-close">Close</a>
+        <h1 id="pop_title">Today's Horoscope for </h1>
+        <div>????</div>
+        <div><small>Check out</small></div>
+        <div id="horo">A CSS-only modal based on the :target pseudo-class. Hope you find it helpful.</div>
+        <div><small>Check out</small></div>
+        <div>A CSS-only modal based on the :target pseudo-class. Hope you find it helpful.</div>
+        <div><small>Check out</small></div>
+        <div>A CSS-only modal based on the :target pseudo-class. Hope you find it helpful.</div>
+        <div><small>Check out</small></div>
+        <div>A CSS-only modal based on the :target pseudo-class. Hope you find it helpful.</div>
+    </div>
+</div>
+
+</body>
+</html>

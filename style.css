@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header {
+    background-color:rgba(33, 33, 33, 0.5);
+    color:#ffffff;
+    display:block;
+    font: 14px/1.3 Arial,sans-serif;
+    height:50px;
+    position:relative;
+    z-index:5;
+}
+
+h2{
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+header h2{
+    font-size: 22px;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 80%;
+    text-align: center;
+}
+
+header a, a:visited {
+    text-decoration:none;
+    color:#fcfcfc;
+}
+
+
+h3 {
+    color: white;
+}
+
+
+.central_text{
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+}
+
+
+.box{
+    padding-top: 20%;
+    padding-bottom: 20%;
+    background: white;
+/*    z-index: 10;*/
+}
+
+
+
+/* ============================================================================================== 
+Moon Animation Sequence 
+
+Adapted from: 
+
+
+================================================================================================= */
+
+
+.moon_container{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 20%;
+	transform: translate(-50%, -50%);
+}
+
+.moon{
+	width: 45%;
+	height: auto;
+	position: relative;
+	left: 125%;
+}
+
+
+.moon_container.moon2{
+	transform: translate(-50%, -50%) rotate(30deg);
+	animation: moon_container_2 3s linear;
+}
+.moon_container.moon3{
+	transform: translate(-50%, -50%) rotate(60deg);
+	animation: moon_container_3 3s linear;
+}
+.moon_container.moon4{
+	transform: translate(-50%, -50%) rotate(90deg);
+	animation: moon_container_4 3s linear;
+}
+.moon_container.moon5{
+	transform: translate(-50%, -50%) rotate(120deg);
+	animation: moon_container_5 3s linear;
+}
+.moon_container.moon6{
+	transform: translate(-50%, -50%) rotate(150deg);
+	animation: moon_container_6 3s linear;
+}
+.moon_container.moon7{
+	transform: translate(-50%, -50%) rotate(180deg);
+	animation: moon_container_7 3s linear;
+}
+.moon_container.moon8{
+	transform: translate(-50%, -50%) rotate(210deg);
+	animation: moon_container_8 3s linear;
+}
+.moon_container.moon9{
+	transform: translate(-50%, -50%) rotate(240deg);
+	animation: moon_container_9 3s linear;
+}
+.moon_container.moon10{
+	transform: translate(-50%, -50%) rotate(270deg);
+	animation: moon_container_10 3s linear;
+}
+.moon_container.moon11{
+	transform: translate(-50%, -50%) rotate(300deg);
+	animation: moon_container_11 3s linear;
+}
+.moon_container.moon12{
+	transform: translate(-50%, -50%) rotate(330deg);
+	animation: moon_container_12 3s linear;
+}
+
+
+
+.moon.moon1{
+	animation: moon_1 3s linear;
+}
+.moon.moon2{
+	transform: rotate(-30deg);
+	animation: moon_2 3s linear;
+}
+.moon.moon3{
+	transform: rotate(-60deg);
+	animation: moon_3 3s linear;
+}
+.moon.moon4{
+	transform: rotate(-90deg);
+	animation: moon_4 3s linear;
+}
+.moon.moon5{
+	transform: rotate(-120deg);
+	animation: moon_5 3s linear;
+}
+.moon.moon6{
+	transform: rotate(-150deg);
+	
+	animation: moon_6 3s linear;
+}
+.moon.moon7{
+	transform: rotate(-180deg);
+	animation: moon_7 3s linear;
+}
+.moon.moon8{
+	transform: rotate(-210deg);
+	animation: moon_8 3s linear;
+}
+.moon.moon9{
+	transform: rotate(-240deg);
+	animation: moon_9 3s linear;
+}
+.moon.moon10{
+	transform: rotate(-270deg);
+	animation: moon_10 3s linear;
+}
+.moon.moon11{
+	transform: rotate(-300deg);
+	animation: moon_11 3s linear;
+}
+.moon.moon12{
+	transform: rotate(-330deg);
+	animation: moon_12 3s linear;
+}
+
+
+
+
+@keyframes moon_container_2{
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to{
+    transform: translate(-50%, -50%) rotate(30deg);
+  }
+}
+@keyframes moon_container_3{
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to{
+    transform: translate(-50%, -50%) rotate(60deg);
+  }
+}
+@keyframes moon_container_4{
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to{
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+}
+@keyframes moon_container_5{
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to{
+    transform: translate(-50%, -50%) rotate(120deg);
+  }
+}
+@keyframes moon_container_6{
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to{
+    transform: translate(-50%, -50%) rotate(150deg);
+  }
+}
+@keyframes moon_container_7{
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to{
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+}
+@keyframes moon_container_8{
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to{
+    transform: translate(-50%, -50%) rotate(210deg);
+  }
+}
+@keyframes moon_container_9{
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to{
+    transform: translate(-50%, -50%) rotate(240deg);
+  }
+}
+@keyframes moon_container_10{
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to{
+    transform: translate(-50%, -50%) rotate(270deg);
+  }
+}
+@keyframes moon_container_11{
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to{
+    transform: translate(-50%, -50%) rotate(300deg);
+  }
+}
+@keyframes moon_container_12{
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to{
+    transform: translate(-50%, -50%) rotate(330deg);
+  }
+}
+
+
+
+@keyframes moon_1{
+  from {
+	opacity: 0;
+  }
+  to{
+	opacity: 1;
+  }
+}
+@keyframes moon_2{
+  from {
+    transform: rotate(0deg);
+	opacity: 0;
+  }
+  to{
+    transform: rotate(-30deg);
+	opacity: 1;
+  }
+}
+@keyframes moon_3{
+  from {
+    transform: rotate(0deg);
+	opacity: 0;
+  }
+  to{
+    transform: rotate(-60deg);
+	opacity: 1;
+  }
+}
+@keyframes moon_4{
+  from {
+    transform: rotate(0deg);
+	opacity: 0;
+  }
+  to{
+    transform: rotate(-90deg);
+	opacity: 1;
+  }
+}
+@keyframes moon_5{
+  from {
+    transform: rotate(0deg);
+	opacity: 0;
+  }
+  to{
+    transform: rotate(-120deg);
+	opacity: 1;
+  }
+}
+@keyframes moon_6{
+  from {
+    transform: rotate(0deg);
+	opacity: 0;
+  }
+  to{
+    transform: rotate(-150deg);
+	opacity: 1;
+  }
+}
+@keyframes moon_7{
+  from {
+    transform: rotate(0deg);
+	opacity: 0;
+  }
+  to{
+    transform: rotate(-180deg);
+	opacity: 1;
+  }
+}
+@keyframes moon_8{
+  from {
+    transform: rotate(0deg);
+	opacity: 0;
+  }
+  to{
+    transform: rotate(-210deg);
+	opacity: 1;
+  }
+}
+@keyframes moon_9{
+  from {
+    transform: rotate(0deg);
+	opacity: 0;
+  }
+  to{
+    transform: rotate(-240deg);
+	opacity: 1;
+  }
+}
+@keyframes moon_10{
+  from {
+    transform: rotate(0deg);
+	opacity: 0;
+  }
+  to{
+    transform: rotate(-270deg);
+	opacity: 1;
+  }
+}
+@keyframes moon_11{
+  from {
+    transform: rotate(0deg);
+	opacity: 0;
+  }
+  to{
+    transform: rotate(-300deg);
+	opacity: 1;
+  }
+}
+@keyframes moon_12{
+  from {
+    transform: rotate(0deg);
+	opacity: 0;
+  }
+  to{
+    transform: rotate(-330deg);
+	opacity: 1;
+  }
